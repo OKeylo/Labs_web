@@ -112,6 +112,39 @@
                 padding: 5%;
                 font-size: 16px;
             }
+            /* Dropdown Lab_5  Start*/
+            .dropdown-5 {
+                position: relative;
+                display: inline-block;
+            }
+            .dropbtn-5 {
+                background-color: #fd9191;
+                font-size: 14px;
+                color:black;
+                padding: 12px 16px;
+                text-decoration: none;
+                min-width: 140px;
+                border: none;
+                z-index: 1;
+            }
+            .dropdown-content-5 {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 140px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+            .dropdown-content-5 a{
+                color:black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content-5 a:hover { background-color: #ddd;}
+            .dropdown-5:hover .dropdown-content-5 {display: block; margin-left: 5%;}
+            .dropdown-5:hover .dropbtn-5 { background-color: #ddd;}
+            /* Dropdown Lab_5  End*/
         </style>
     </head>
     <body>
@@ -134,6 +167,15 @@
                         <a href="./Lab_2/index.html">Лабораторная 2</a>
                         <a href="./Lab_3/index.html">Лабораторная 3</a>
                         <a href="./Lab_4/index.html">Лабораторная 4</a>
+                        <div class="dropdown-5">
+                            <button class="dropbtn-5">Лабораторная 5</button>
+                            <div class="dropdown-content-5">
+                                <a href="./Lab_5/Ex_1/index.html">Задание 1</a>
+                                <a href="./Lab_5/Ex_2/index.html">Задание 2</a>
+                                <a href="./Lab_5/Ex_3/index.html">Задание 3</a>
+                                <a href="./Lab_5/Ex_4/index.html">Задание 4</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
