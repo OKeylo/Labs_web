@@ -1,22 +1,26 @@
-function checkNumber() {
-  let number = parseInt(prompt("Введите число"));
-  if (isNaN(number)) {
-    alert("Возможно вы допустили ошибку при вводе числа\nПопробуйте еще раз");
-    checkNumber();
-    return false;
+let numbers = [
+    6n,
+    28n,
+    496n,
+    8128n,
+    33550336n,
+    8589869056n,
+    137438691328n,
+    2305843008139952128n,
+    2658455991569831744654692615953842176n,
+    191561942608236107294793378084303638130997321548169216n
+  ];
+let input = BigInt(prompt("Введите положительное целое число"));
+for (i=0;i<numbers.length;i++) {
+  if (input == numbers[i]) {
+    f = 1;
+    break;
   } else {
-    let cnt = 0;
-    for(let i = 1; i < number; i++) {
-      if (number % i == 0) {
-        cnt += i;
-      }
-    }
-    if (number == cnt) {
-      alert(`Число ${number} является совершенным`)
-    } else {
-      alert(`Число ${number} не является совершенным`)
-    }
-    return true;
+    f = 0
   }
 }
-checkNumber();
+if (f) {
+  alert(`Число ${input} совершенное`);
+} else {
+  alert(`Число ${input} несовершенное`);
+}
